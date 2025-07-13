@@ -1,0 +1,36 @@
+[project]
+name = "cppwalk"
+version = "0.1.0"
+description = "A C/C++ source code analysis tool powered by clang/libclang"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Herbert Shen", email = "ishbguy@hotmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "clang>=20.1.5",
+    "click>=8.2.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/ishbguy/cppwalk"
+Documentation = "https://github.com/ishbguy/cppwalk"
+Repository = "https://github.com/ishbguy/cppwalk"
+Issues = "https://github.com/ishbguy/cppwalk/issues"
+Changelog = "https://github.com/ishbguy/cppwalk"
+
+[project.scripts]
+cppwalk = "cppwalk:main"
+cw = "cppwalk:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "ruff>=0.12.3",
+]
