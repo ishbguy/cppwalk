@@ -13,13 +13,23 @@ dependencies = [
     "clang>=20.1.5",
     "click>=8.2.1",
 ]
+keywords = ["c", "cpp", "clang", "libclang", "AST", "call graph", "flow graph"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
 
 [project.urls]
-Homepage = "https://github.com/ishbguy/cppwalk"
-Documentation = "https://github.com/ishbguy/cppwalk"
-Repository = "https://github.com/ishbguy/cppwalk"
-Issues = "https://github.com/ishbguy/cppwalk/issues"
-Changelog = "https://github.com/ishbguy/cppwalk"
+homepage = "https://github.com/ishbguy/cppwalk"
+documentation = "https://github.com/ishbguy/cppwalk"
+repository = "https://github.com/ishbguy/cppwalk"
+issues = "https://github.com/ishbguy/cppwalk/issues"
+changelog = "https://github.com/ishbguy/cppwalk"
 
 [project.scripts]
 cppwalk = "cppwalk:main"
